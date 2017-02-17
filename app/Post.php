@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Michelf\Markdown as Markdowner;
 
 class Post extends Model
 {

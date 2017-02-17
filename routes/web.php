@@ -48,6 +48,8 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'auth'], function () {
 	Route::delete('admin/upload/file', 'UploadController@deleteFile');
 	Route::post('admin/upload/folder', 'UploadController@createFolder');
 	Route::delete('admin/upload/folder', 'UploadController@deleteFolder');
+
+	//Auth::routes();
 });
 
 
@@ -55,4 +57,5 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'auth'], function () {
 //Route::get('/auth/login', 'Auth\AuthController@getLogin');
 //Route::post('/auth/login', 'Auth\AuthController@postLogin');
 //Route::get('/auth/logout', 'Auth\AuthController@getLogout');
+
 Auth::routes();

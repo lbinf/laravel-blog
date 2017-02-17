@@ -6,5 +6,6 @@ return [
         	'storage' => 'local',
         	'webpath' => '/uploads',
         ],
+        'page_image' => '/uploads/default.jpg',
 
 ];

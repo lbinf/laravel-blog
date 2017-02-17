@@ -91,7 +91,7 @@
             </label>
             <div class="col-md-8">
                 <select name="tags[]" id="tags" class="form-control" multiple>
-                @foreach ($allTags as $tag)
+                @foreach ($allTags as $tag)               
                     <option @if (in_array($tag, $tags)) selected @endif value="{{ $tag }}">
                         {{ $tag }}
                     </option>

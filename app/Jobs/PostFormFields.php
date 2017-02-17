@@ -15,7 +15,7 @@ use Illuminate\Foundation\Bus\Dispatchable;
 class PostFormFields  implements ShouldQueue
 {
 
-    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+   // use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
     /**
      * The id (if any) of the Post row
@@ -75,7 +75,7 @@ class PostFormFields  implements ShouldQueue
 
         return array_merge(
             $fields,
-           // ['allTags' => Tag::lists('tag')->all()]
+            ['allTags' => Tag::pluck('tag')->all()]
         );
     }
 
@@ -97,8 +97,8 @@ class PostFormFields  implements ShouldQueue
             $fields[$field] = $post->{$field};
         }
 
-        //$fields['tags'] = $post->tags()->lists('tag')->all();
-        $fields['tags'] = $post->tags();
+        $fields['tags'] = $post->tags()->pluck('tag')->all();
+        //$fields['tags'] = $post->tags();
 
         return $fields;
     }

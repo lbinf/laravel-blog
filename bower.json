@@ -12,6 +12,7 @@
     "jquery": "^3.1.1",
     "bootstrap": "^3.3.7",
     "selectize": "^0.12.4",
-    "pickadate": "^3.5.6"
+    "pickadate": "^3.5.6",
+    "datatables": "^1.10.13"
   }
 }

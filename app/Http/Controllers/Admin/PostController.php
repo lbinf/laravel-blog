@@ -18,8 +18,7 @@ class PostController extends Controller
   */
 	public function index()
 	{
-	    return view('admin.post.index')->withPosts(Post::all());
-	}
+	    return view('admin.post.index')->withPosts(Post::all());	}
 
 	/**
      * Show the new post form
@@ -53,8 +52,9 @@ class PostController extends Controller
      * @return Response
      */
     public function edit($id)
-    {
-        $data = $this->dispatch(new PostFormFields($id));
+    {   
+    	
+        $data = $this->dispatchNow(new PostFormFields($id));
 
         return view('admin.post.edit', $data);
     }
