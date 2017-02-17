@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "./";
 
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 8);
+/******/ 	return __webpack_require__(__webpack_require__.s = 9);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -77,7 +77,7 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-__webpack_require__(3);
+__webpack_require__(4);
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -85,7 +85,7 @@ __webpack_require__(3);
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('example', __webpack_require__(5));
+Vue.component('example', __webpack_require__(6));
 
 var app = new Vue({
   el: '#app'
@@ -99,6 +99,12 @@ var app = new Vue({
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: ModuleNotFoundError: Module not found: Error: Can't resolve './fonts/glyphicons-halflings-regular.eot' in 'D:\\www\\Code\\blog\\resources\\assets\\less'\n    at factoryCallback (D:\\www\\Code\\blog\\node_modules\\webpack\\lib\\Compilation.js:259:39)\n    at D:\\www\\Code\\blog\\node_modules\\webpack\\lib\\NormalModuleFactory.js:234:19\n    at onDoneResolving (D:\\www\\Code\\blog\\node_modules\\webpack\\lib\\NormalModuleFactory.js:59:20)\n    at D:\\www\\Code\\blog\\node_modules\\webpack\\lib\\NormalModuleFactory.js:126:20\n    at D:\\www\\Code\\blog\\node_modules\\async\\dist\\async.js:3694:9\n    at D:\\www\\Code\\blog\\node_modules\\async\\dist\\async.js:356:16\n    at iteratorCallback (D:\\www\\Code\\blog\\node_modules\\async\\dist\\async.js:934:13)\n    at D:\\www\\Code\\blog\\node_modules\\async\\dist\\async.js:840:16\n    at D:\\www\\Code\\blog\\node_modules\\async\\dist\\async.js:3691:13\n    at apply (D:\\www\\Code\\blog\\node_modules\\async\\dist\\async.js:21:25)\n    at D:\\www\\Code\\blog\\node_modules\\async\\dist\\async.js:56:12\n    at D:\\www\\Code\\blog\\node_modules\\webpack\\lib\\NormalModuleFactory.js:121:22\n    at onResolved (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\Resolver.js:70:11)\n    at loggingCallbackWrapper (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\createInnerCallback.js:31:19)\n    at afterInnerCallback (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\Resolver.js:138:10)\n    at loggingCallbackWrapper (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\createInnerCallback.js:31:19)\n    at Resolver.applyPluginsAsyncSeriesBailResult1 (D:\\www\\Code\\blog\\node_modules\\tapable\\lib\\Tapable.js:181:46)\n    at innerCallback (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\Resolver.js:125:19)\n    at loggingCallbackWrapper (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\createInnerCallback.js:31:19)\n    at D:\\www\\Code\\blog\\node_modules\\tapable\\lib\\Tapable.js:283:15\n    at D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\UnsafeCachePlugin.js:38:4\n    at loggingCallbackWrapper (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\createInnerCallback.js:31:19)\n    at afterInnerCallback (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\Resolver.js:138:10)\n    at loggingCallbackWrapper (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\createInnerCallback.js:31:19)\n    at Resolver.applyPluginsAsyncSeriesBailResult1 (D:\\www\\Code\\blog\\node_modules\\tapable\\lib\\Tapable.js:181:46)\n    at innerCallback (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\Resolver.js:125:19)\n    at loggingCallbackWrapper (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\createInnerCallback.js:31:19)\n    at D:\\www\\Code\\blog\\node_modules\\tapable\\lib\\Tapable.js:283:15\n    at innerCallback (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\Resolver.js:123:11)\n    at loggingCallbackWrapper (D:\\www\\Code\\blog\\node_modules\\enhanced-resolve\\lib\\createInnerCallback.js:31:19)");
+
+/***/ }),
+/* 3 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -127,7 +133,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 };
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(jQuery) {var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -2302,10 +2308,10 @@ if (typeof jQuery === 'undefined') {
     });
   });
 }(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(4)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(5)))
 
 /***/ }),
-/* 4 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -12532,14 +12538,14 @@ return jQuery;
 
 
 /***/ }),
-/* 5 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
-var Component = __webpack_require__(6)(
+var Component = __webpack_require__(7)(
   /* script */
-  __webpack_require__(2),
+  __webpack_require__(3),
   /* template */
-  __webpack_require__(7),
+  __webpack_require__(8),
   /* scopeId */
   null,
   /* cssModules */
@@ -12566,7 +12572,7 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports) {
 
 module.exports = function normalizeComponent (
@@ -12619,7 +12625,7 @@ module.exports = function normalizeComponent (
 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
@@ -12648,11 +12654,12 @@ if (false) {
 }
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(0);
-module.exports = __webpack_require__(1);
+__webpack_require__(1);
+module.exports = __webpack_require__(2);
 
 
 /***/ })

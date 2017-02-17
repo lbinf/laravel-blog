@@ -13,6 +13,7 @@
     "bootstrap": "^3.3.7",
     "selectize": "^0.12.4",
     "pickadate": "^3.5.6",
-    "datatables": "^1.10.13"
+    "datatables": "^1.10.13",
+    "clean-blog": "^1.0.1"
   }
 }

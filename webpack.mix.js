@@ -61,6 +61,8 @@ mix.copy("vendor/bower_dl/pickadate/lib/compressed/picker.date.js", "public/asse
 mix.copy("vendor/bower_dl/pickadate/lib/compressed/picker.time.js", "public/assets/pickadate/");
 
 mix.copy('public/css/app.css','public/css/admin.css');
+// Copy clean-blog less files
+mix.copy('vendor/bower_dl/clean-blog/less/**', 'resources/assets/less/clean-blog');
 /**
  * mix 合并文件
  */
@@ -79,3 +81,13 @@ mix.combine(
 
 // 编译 Less
 //mix.less('resources/assets/less/admin.less', 'public/css/admin.css');
+
+mix.combine([
+	'resources/assets/js/jquery.js',
+	'resources/assets/js/bootstrap.js',
+	'resources/assets/js/blog.js',
+	], 'public/js/blog.js'
+);
+
+//Compile CSS
+mix.less('resources/assets/less/blog.less', 'public/assets/css/blog.css');
