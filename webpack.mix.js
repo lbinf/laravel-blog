@@ -31,12 +31,12 @@ mix.copy("vendor/bower_dl/bootstrap/less/mixins/**", "resources/assets/less/boot
 mix.copy("vendor/bower_dl/bootstrap/dist/js/bootstrap.js", "resources/assets/js/");
 
 mix.copy("vendor/bower_dl/bootstrap/dist/fonts/**", "public/assets/fonts");
-mix.copy("vendor/bower_dl/bootstrap/dist/fonts/**", "resources/assets/less/bootstrap/fonts");
+mix.copy("vendor/bower_dl/bootstrap/dist/fonts/**", "resources/assets/less/fonts");
 
-mix.copy("vendor/bower_dl/fontawesome/less/**", "resources/assets/less/fontawesome");
+mix.copy("vendor/bower_dl/font-awesome/less/**", "resources/assets/less/fontawesome");
 
-mix.copy("vendor/bower_dl/fontawesome/fonts/**", "public/assets/fonts");
-mix.copy("vendor/bower_dl/fontawesome/fonts/**", "resources/assets/bootstrap/less/fonts");
+mix.copy("vendor/bower_dl/font-awesome/fonts/**", "public/assets/fonts");
+mix.copy("vendor/bower_dl/font-awesome/fonts/**", "resources/assets/less/fonts");
 
 // Copy datatables
 
@@ -80,7 +80,7 @@ mix.combine(
 );
 
 // 编译 Less
-//mix.less('resources/assets/less/admin.less', 'public/css/admin.css');
+mix.less('resources/assets/less/admin.less', 'public/css/admin.css');
 
 mix.combine([
 	'resources/assets/js/jquery.js',
@@ -90,4 +90,4 @@ mix.combine([
 );
 
 //Compile CSS
-mix.less('resources/assets/less/blog.less', 'public/assets/css/blog.css');
+mix.less('resources/assets/less/blog.less', 'public/css/blog.css');
