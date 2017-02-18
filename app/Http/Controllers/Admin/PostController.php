@@ -25,7 +25,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        $data = $this->dispatch(new PostFormFields());
+        $data = $this->dispatchNow(new PostFormFields());
 
         return view('admin.post.create', $data);
     }

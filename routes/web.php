@@ -23,6 +23,8 @@ Route::get('/', function () {
 
 Route::get('blog', 'BlogController@index');
 Route::get('blog/{slug}', 'BlogController@showPost');
+Route::get('contact', 'ContactController@showForm');
+Route::post('contact', 'ContactController@sendContactInfo');
 
 
 // Admin area
@@ -56,6 +58,6 @@ Route::group(['namespace' => 'Admin', 'middleware' => 'auth'], function () {
 // Logging in and out
 //Route::get('/auth/login', 'Auth\AuthController@getLogin');
 //Route::post('/auth/login', 'Auth\AuthController@postLogin');
-//Route::get('/auth/logout', 'Auth\AuthController@getLogout');
+Route::get('logout', 'Auth\AuthController@logout');
 
 Auth::routes();
