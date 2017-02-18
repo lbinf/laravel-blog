@@ -161,7 +161,7 @@
                 <h4 class="modal-title">Image Preview</h4>
             </div>
             <div class="modal-body">
-                <img id="preview-image" src="x" class="img-responsive">
+                <img id="preview-image" src="" class="img-responsive">
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">

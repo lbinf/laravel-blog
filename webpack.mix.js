@@ -11,8 +11,8 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-	.sass('resources/assets/sass/app.scss', 'public/css');
+//mix.js('resources/assets/js/app.js', 'public/js')
+//	.sass('resources/assets/sass/app.scss', 'public/css');
 
 
 /**
@@ -91,3 +91,7 @@ mix.combine([
 
 //Compile CSS
 mix.less('resources/assets/less/blog.less', 'public/css/blog.css');
+
+//Copy file to pulic/assets dir
+mix.copy('public/css/blog.css', 'public/assets/css')
+    .copy('public/js/blog.js', 'public/assets/js');
