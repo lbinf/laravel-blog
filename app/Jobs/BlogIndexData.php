@@ -12,8 +12,8 @@ use Illuminate\Queue\InteractsWithQueue;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Bus\Dispatchable;
 
-class BlogIndexData extends Job implements SelfHandling
-//class BlogIndexData implements ShouldQueue
+//class BlogIndexData extends Job implements SelfHandling
+class BlogIndexData implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
