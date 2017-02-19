@@ -13,7 +13,7 @@ class PostTableSeeder extends Seeder
     public function run()
     {
         // Pull all the tag names from the file
-        $tags = Tag::lists('tag')->all();
+        $tags = Tag::pluck('tag')->all();
 
         Post::truncate();
 

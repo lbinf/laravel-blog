@@ -11,5 +11,6 @@ return [
         'storage' => 'local',
         'webpath' => '/uploads/',
     ],
-    'contact_email'=>'07258467@163.com'
+    'contact_email'=>'07258467@163.com',
+    'rss_size'=>25,
 ];
